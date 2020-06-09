@@ -38,6 +38,7 @@ class CssModule extends webpack.Module {
     this.content = dependency.content;
     this.media = dependency.media;
     this.sourceMap = dependency.sourceMap;
+    this.resource = this.nameForCondition();
   }
 
   // no source() so webpack doesn't do add stuff to the bundle
